@@ -1,0 +1,84 @@
+.headerBody{
+    display: flex;
+    grid-area: 1 / 1 / 2 / 8;
+}
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5%;
+    }
+        .logo img{
+            height: 4em;
+        }
+    .headerContainer{
+        border: var(--black-border);
+        background-color: var(--black-background);
+        display: flex;
+        justify-content: space-between;
+        padding: .4em .4em .7em .4em;
+        width: 95%;
+    }
+        .logoContainer{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            width: 30%;
+        }
+            .logoContainer h1{
+                background-color: var(--main-btn-bg);
+                color: black;
+                border: 3px solid var(--main-btn-border);
+                padding: .3em;
+                border-radius: 5px;
+                font-family: var(--pixel-font);
+                box-shadow: 5px 5px 0px var(--main-btn-shadow);
+                transition: box-shadow 0.1s, transform 0.1s;
+            }
+        .navContainer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 60%;
+        }
+            .navBtn{
+                height: 3em;
+                background-color: var(--nav-btn-bg);
+                color: black;
+                border: 3px solid var(--nav-btn-border);
+                border-radius: 5px;
+                padding: .3em;
+                font-family: var(--pixel-font);
+                cursor: pointer;
+                box-shadow: 5px 5px 0px var(--nav-btn-shadow);
+                transition: box-shadow 0.1s, transform 0.1s;
+            }
+                .navBtn:hover{
+                    background-color: #c4c4c4;
+                }
+                .navBtn:active{
+                    background-color: #9e9e9e;
+                    transform: translate( 5px, 5px);
+                    box-shadow: none;
+                }
+            .buyBtn{
+                height: 100%;
+                background-color: var(--main-btn-bg);
+                color: black;
+                border: 3px solid var(--main-btn-border);
+                padding: 0 1em;
+                border-radius: 5px;
+                font-family: var(--pixel-font);
+                font-size: 1.5em;
+                box-shadow: 5px 5px 0px var(--main-btn-shadow);
+                transition: box-shadow 0.1s, transform 0.1s;
+                cursor: pointer;
+            }
+                .buyBtn:hover{
+                    background-color: #e2db00;
+                }
+                .buyBtn:active{
+                    background-color: #c0ba00;
+                    transform: translate( 5px, 5px);
+                    box-shadow: none;
+                }

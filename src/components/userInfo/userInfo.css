@@ -1,0 +1,41 @@
+.userInfoBody{
+    border: 1px solid red;
+    grid-area: 5 / 1 / 8 / 3;
+    padding: 1em;
+    border: var(--black-border);
+    background-color: var(--black-background);
+    font-family: var(--pixel-font);
+}
+.userInfoContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    .connectBtn{
+        padding: .5em .5em 1em .5em;
+        border: var(--black-border);
+        background-color: var(--black-background);
+        text-align: center;
+    }
+        .connectBtn button{
+            font-size: 1em;
+            padding: 1em;
+        }
+    .userStatistic{
+        display: flex;
+        flex-direction: column;
+        gap: .3em;
+        color: var(--text-color);
+    }
+        .tokenOwned,
+        .totalSupply,
+        .tokenLeft{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: var(--black-border);
+            background-color: var(--black-background);
+            font-size: .9em;
+            padding: .3em;
+        }

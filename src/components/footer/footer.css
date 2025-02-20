@@ -1,0 +1,4 @@
+.footerBody{
+    border: 1px solid red;
+    grid-area: 7 / 3 / 8 / 6;
+}

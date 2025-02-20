@@ -1,0 +1,44 @@
+:root{
+  --pixel-font: "Press Start 2P", sans-serif;
+  --black-border: 3px solid black;
+  --black-background: rgba(0, 0, 0, 0.5);
+  --main-btn-bg: #fff700;
+  --main-btn-border: #908c0d;
+  --main-btn-shadow: #4e4b00;
+  --nav-btn-bg: #d3d3d3;
+  --nav-btn-border: #838383;
+  --nav-btn-shadow: #444444;
+  --text-color: #FFF8F0;
+  --dark-text: #001219;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.body{
+  height: 100vh;
+  background-image: url(./assets/BodyBackground.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5em 10em;
+}
+  .content{
+    background-image: url(./assets/snap2024-11-29-13-43-43.png);
+    background-position: center;
+    padding: 2em;
+    border: 5px solid #7c7b69;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    z-index: 100;
+  }
+
+  

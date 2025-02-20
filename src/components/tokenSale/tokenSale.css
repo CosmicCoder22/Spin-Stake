@@ -1,0 +1,67 @@
+.tokeSaleBody{
+    border: 1px solid red;
+    grid-area: 2 / 1 / 5 / 3;
+    padding: 1em;
+    border: var(--black-border);
+    background-color: var(--black-background);
+    font-family: var(--pixel-font);
+}
+.tokeSaleContent{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+    .containerName{
+        border: var(--black-border);
+        background-color: var(--black-background);
+        color: var(--text-color);
+        font-size: .7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        width: 100%;
+    }
+    .liveContainer{
+        border: var(--black-border);
+        background-color: var(--black-background);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding: 1em;
+        height: fit-content;
+        font-size: .7em;
+    }
+        .liveContainer p{
+            color: red;
+            height: fit-content;
+        }
+        .redCircle{
+            border-radius: 50%;
+            height: .9em;
+            width: .9em;
+            background-color: red;
+        }
+        .liveTimer{
+            color: var(--text-color);
+            height: fit-content;
+        }
+    .stageContainer{
+        border: var(--black-border);
+        background-color: var(--black-background);
+        color: var(--text-color);
+        padding: 1em;
+        font-size: .7em;
+        text-align: center;
+    }
+    .buyNowBtn{
+        border: var(--black-border);
+        background-color: var(--black-background);
+        padding: .5em .5em 1em .5em;
+        text-align: center;  
+    }
+        .buyNowBtn button{
+            padding: .5em;
+        }
