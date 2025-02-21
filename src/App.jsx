@@ -57,7 +57,7 @@ function App() {
       <AnimatePresence>
         
         {isLoading ? (<Loader />):
-        (<motion.div className="content">
+        (<motion.div className="content" initial={{ opacity: 0}} animate={{ opacity: 1}} transition={{ duration: 2 }}>
             <Header
               handleTokenSaleBlinking={handleTokenSaleBlinking}
               handleSpinBlinking={handleSpinBlinking}

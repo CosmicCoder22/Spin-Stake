@@ -17,7 +17,7 @@ function TokenSale({ isTokenSaleBlinking }) {
                 <p>Project stage</p>
             </div>
             <div className="buyNowBtn">
-                <button className='buyBtn'>BUY NOW</button>
+                <button className='buyBtn main'>BUY NOW</button>
             </div>
         </div>
     </div>
