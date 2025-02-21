@@ -5,16 +5,15 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../../assets/BodyBackground.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    font-family: var(--pixel-font);
+    font-size: 10em;
 }
-    .loaderBody h1{
-        font-family: var(--pixel-font);
-        color: var(--text-color);
-        font-size: 10em;
+    .loaderBody img{
+        height: 1em;
+        width: 1em;
     }
