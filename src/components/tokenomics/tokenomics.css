@@ -1,3 +1,61 @@
 .tokenomicsBody{
-    border: 1px solid red;
+    grid-area: 2 / 8 / 10 / 11;
+    padding: 1em;
+    border: var(--black-border);
+    background-color: var(--black-background);
+    font-family: var(--pixel-font);
+    color: var(--text-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+        .allocationProgresbarContainer{
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+        }
+            .allocationSectionContainer{
+                display: flex;
+                flex-direction: column;
+                gap: .3em;
+                border: var(--black-border);
+                background-color: var(--black-background);
+                backdrop-filter: blur(1px);
+                padding: .3em;
+            }
+            .allocationSectionContainer p{
+                font-size: .8em;
+                width: 100%;
+                text-align: end;
+            }
+            .allocationName{
+                font-size: .9em;
+            }
+            .progresBar img{
+                height: 2em;
+            }
+            .contractAddress,
+            .marketPlaceAddress{
+                border: var(--black-border);
+                background-color: var(--black-background);
+                backdrop-filter: blur(1px);
+                display: flex;
+                gap: .5em;
+                padding: .5em;
+                flex-direction: column;
+                align-items: center;
+                cursor: pointer;
+            }
+            .contractAddress p,
+            .marketPlaceAddress p{
+                color: var(--text-color);
+                text-decoration: underline;
+                text-align: start;
+                width: 100%;
+                transition: all .3s ease-in-out;
+            }
+            .contractAddress:hover p,
+            .marketPlaceAddress:hover p{
+                color: var(--main-btn-bg);
+            }

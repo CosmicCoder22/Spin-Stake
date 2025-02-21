@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 
 import AboutUs from "./components/aboutUs/AboutUs";
@@ -8,55 +7,60 @@ import SpinContainer from "./components/spin/SpinContainer";
 import Tokenomics from "./components/tokenomics/Tokenomics";
 import TokenSale from "./components/tokenSale/TokenSale";
 import UserInfo from "./components/userInfo/UserInfo";
+import Footer from "./components/footer/Footer";
+
 import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
 function App() {
 
-  const [loader, setLoader] = useState(true);
-  const [showContent, setShowContent] = useState(false);
+    const [isTokenSaleBlinking, setIsTokenSaleBlinking] = useState(false)
+    const handleTokenSaleBlinking = () => {
+      setIsTokenSaleBlinking(true)
+      setTimeout(() => {
+        setIsTokenSaleBlinking(false)
+      }, 2000)
+    }
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setLoader(false);
-      setTimeout(() => setShowContent(true), 100);
-    }, 3000);
 
-    return () => clearTimeout(timeout);
-  }, []);
+    const [isSpinBlinking, setIsSpinBlinking] = useState(false)
+    const handleSpinBlinking = () => {
+      setIsSpinBlinking(true)
+      setTimeout(() => {
+        setIsSpinBlinking(false)
+      }, 2000)
+    }
+    const [isTokenomicsBlinking, setIsTokenomicsBlinking] = useState(false)
+    const handleTokenomicsBlinking = () => {
+      setIsTokenomicsBlinking(true)
+      setTimeout(() => {
+        setIsTokenomicsBlinking(false)
+      }, 2000)
+    }
+    const [isSocialsBlinking, setIsSocialsBlinking] = useState(false)
+    const handleSocialsBlinking = () => {
+      setIsSocialsBlinking(true)
+      setTimeout(() => {
+        setIsSocialsBlinking(false)
+      }, 2000)
+    }
+    
 
   return (
     <div className="body">
       <AnimatePresence>
-        <Loader isVisible={loader} />
-          <motion.div 
-          initial={{ opacity: 0, width: 0}}
-          animate={{ opacity: 1, width: "100%"}}
-          transition={{ duration: 3, delay: 3}}
+        {/* <Loader/> */}
+        <motion.div
           className="content">
-            <div className="header">
-              <Header />
-            </div>
-            <div className="contentBody">
-              <div className="tokeSaleUserInfo">
-                <TokenSale />
-                <UserInfo />
-              </div>
-              <div className="aboutUsFooter">
-                <SpinContainer />
-                <AboutUs />
-                <footer />
-              </div>
-              <div className="tokenomics">
-                <Tokenomics />
-              </div>
-            </div>
-            
-            
-            
-            
-            
-          </motion.div>
-          </AnimatePresence>
+          <Header handleTokenSaleBlinking={handleTokenSaleBlinking} handleSpinBlinking={handleSpinBlinking} handleTokenomicsBlinking={handleTokenomicsBlinking} handleSocialsBlinking={handleSocialsBlinking}/>
+          <TokenSale isTokenSaleBlinking={isTokenSaleBlinking} />
+          <UserInfo />
+          <SpinContainer isSpinBlinking={isSpinBlinking}/>
+          <AboutUs />
+          <Footer isSocialsBlinking={isSocialsBlinking}/>
+          <Tokenomics isTokenomicsBlinking={isTokenomicsBlinking}/>
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 }

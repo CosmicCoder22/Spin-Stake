@@ -4,7 +4,7 @@ import './spinContainer.css';
 import wheelFront from '../../assets/wheelFront.png';
 import wheelBack from '../../assets/wheelBack.png';
 
-function SpinContainer() {
+function SpinContainer({ isSpinBlinking }) {
   const sectors = [3000, 100, 7000, 500, 5000, "Re Roll", 10000, 0];
   const [rotation, setRotation] = useState(0);
   const [isSpinning, setIsSpinning] = useState(false);
@@ -28,7 +28,7 @@ function SpinContainer() {
   };
 
   return (
-    <div className='spinContainerBody'>
+    <div className={`spinContainerBody ${isSpinBlinking ? 'blinking' : ''}`}>
       <div className="spinBtnContainer">
         <div className="containerName">
           <h1>Spin to Win</h1>

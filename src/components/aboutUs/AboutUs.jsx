@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './aboutUs.css'
 
 function AboutUs() {
+
+  const [isAboutUsBlinking, setIsAboutUsBlinking] = useState(false)
+
+  const handleAboutUsBlinking = () => {
+    setIsAboutUsBlinking(true)
+    setTimeout(() => {
+      setIsAboutUsBlinking(false)
+    }, 2000)
+  }
   return (
     <div className='aboutUsBody'>
           <p>

@@ -1,4 +1,5 @@
 .spinContainerBody {
+    grid-area: 2 / 4 / 6 / 8;
     padding: 1em;
     border: var(--black-border);
     background-color: var(--black-background);
@@ -47,7 +48,7 @@
 }
 
 .wheelFront {
-    height: 17em;
+    height: 16em;
     position: absolute;
     z-index: 3;
 }
@@ -55,7 +56,7 @@
 .wheelBack {
     position: absolute;
     z-index: 2;
-    height: 15em;
+    height: 14em;
     transform: rotate(var(--rotation, 0deg));
     transition: transform 4s cubic-bezier(0, 0, 0.75, 1);
 }

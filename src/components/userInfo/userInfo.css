@@ -1,5 +1,5 @@
 .userInfoBody{
-    border: 1px solid red;
+    grid-area: 6 / 1 / 10 / 4;
     padding: 1em;
     border: var(--black-border);
     background-color: var(--black-background);
@@ -7,15 +7,17 @@
 }
 .userInfoContent{
     height: 100%;
+    gap: .5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
     .connectBtn{
-        padding: .5em .5em 1em .5em;
+        padding: .5em;
         border: var(--black-border);
         background-color: var(--black-background);
         text-align: center;
+        backdrop-filter: blur(1px);
     }
         .connectBtn button{
             font-size: 1em;
@@ -24,7 +26,7 @@
     .userStatistic{
         display: flex;
         flex-direction: column;
-        gap: .3em;
+        gap: .5em;
         color: var(--text-color);
     }
         .tokenOwned,
@@ -35,6 +37,7 @@
             justify-content: space-between;
             border: var(--black-border);
             background-color: var(--black-background);
-            font-size: .9em;
+            font-size: .8em;
             padding: .3em;
+            backdrop-filter: blur(1px);
         }

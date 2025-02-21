@@ -1,10 +1,10 @@
 import React from 'react'
 import './tokenSale.css'
 
-function TokenSale() {
+function TokenSale({ isTokenSaleBlinking }) {
   return (
-    <div className='tokeSaleBody'>
-        <div className="tokeSaleContent">
+    <div className={`tokenSaleBody ${isTokenSaleBlinking ? 'blinking' : ''}`}>
+        <div className="tokenSaleContent">
             <div className="containerName">
                 <h1>Token Sale</h1>
             </div>

@@ -3,7 +3,7 @@ import "./header.css";
 
 import logo from "../../assets/logo.gif";
 
-function Header() {
+function Header({ handleTokenSaleBlinking, handleSpinBlinking, handleTokenomicsBlinking, handleSocialsBlinking}) {
   return (
     <div className="headerBody">
       <div className="logo">
@@ -14,10 +14,10 @@ function Header() {
           <button className="buyBtn">Spin Stake</button>
         </div>
         <div className="navContainer">
-          <button className="navBtn">ABOUT US</button>
-          <button className="navBtn">SOCIALS</button>
-          <button className="navBtn">TOKENOMICS</button>
-          <button className="buyBtn main">BUY</button>
+          <button className="navBtn" onClick={handleSpinBlinking}>SPIN</button>
+          <button className="navBtn" onClick={handleSocialsBlinking}>SOCIALS</button>
+          <button className="navBtn" onClick={handleTokenomicsBlinking}>TOKENOMICS</button>
+          <button className="buyBtn main" onClick={handleTokenSaleBlinking}>BUY</button>
         </div>
       </div>
     </div>
