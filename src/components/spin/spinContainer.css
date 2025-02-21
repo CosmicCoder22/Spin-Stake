@@ -1,5 +1,4 @@
 .spinContainerBody {
-    grid-area: 2 / 3 / 5 / 6;
     padding: 1em;
     border: var(--black-border);
     background-color: var(--black-background);

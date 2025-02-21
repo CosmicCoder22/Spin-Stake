@@ -33,13 +33,28 @@ function App() {
           animate={{ opacity: 1, width: "100%"}}
           transition={{ duration: 3, delay: 3}}
           className="content">
-            <Header />
-            <TokenSale />
-            <SpinContainer />
-            <Tokenomics />
-            <UserInfo />
-            <AboutUs />
-            <footer />
+            <div className="header">
+              <Header />
+            </div>
+            <div className="contentBody">
+              <div className="tokeSaleUserInfo">
+                <TokenSale />
+                <UserInfo />
+              </div>
+              <div className="aboutUsFooter">
+                <SpinContainer />
+                <AboutUs />
+                <footer />
+              </div>
+              <div className="tokenomics">
+                <Tokenomics />
+              </div>
+            </div>
+            
+            
+            
+            
+            
           </motion.div>
           </AnimatePresence>
     </div>

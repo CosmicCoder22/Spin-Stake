@@ -1,6 +1,8 @@
 .headerBody{
     display: flex;
-    grid-area: 1 / 1 / 2 / 8;
+    width: 100%;
+    height: fit-content;
+
 }
     .logo{
         display: flex;
@@ -16,24 +18,28 @@
         background-color: var(--black-background);
         display: flex;
         justify-content: space-between;
-        padding: .4em .4em .7em .4em;
+        padding: .4em;
         width: 95%;
     }
         .logoContainer{
             display: flex;
             justify-content: space-between;
-            align-items: start;
+            align-items: center;
             width: 30%;
         }
-            .logoContainer h1{
+            .buyBtn{
+                font-size: var(--large-font);
+                font-weight: 400;
                 background-color: var(--main-btn-bg);
                 color: black;
                 border: 3px solid var(--main-btn-border);
-                padding: .3em;
+                padding: var(--large-font-padding);
                 border-radius: 5px;
                 font-family: var(--pixel-font);
                 box-shadow: 5px 5px 0px var(--main-btn-shadow);
                 transition: box-shadow 0.1s, transform 0.1s;
+                cursor: pointer;
+                margin-bottom: 5px;
             }
         .navContainer{
             display: flex;
@@ -42,12 +48,13 @@
             width: 60%;
         }
             .navBtn{
-                height: 3em;
+                font-size: 1em;
+                font-weight: 400;
                 background-color: var(--nav-btn-bg);
                 color: black;
                 border: 3px solid var(--nav-btn-border);
                 border-radius: 5px;
-                padding: .3em;
+                padding: .5em;
                 font-family: var(--pixel-font);
                 cursor: pointer;
                 box-shadow: 5px 5px 0px var(--nav-btn-shadow);
@@ -62,14 +69,14 @@
                     box-shadow: none;
                 }
             .buyBtn{
-                height: 100%;
+                font-size: var(--large-font);
+                font-weight: 600;
                 background-color: var(--main-btn-bg);
                 color: black;
                 border: 3px solid var(--main-btn-border);
-                padding: 0 1em;
+                padding: var(--large-font-padding);
                 border-radius: 5px;
                 font-family: var(--pixel-font);
-                font-size: 1.5em;
                 box-shadow: 5px 5px 0px var(--main-btn-shadow);
                 transition: box-shadow 0.1s, transform 0.1s;
                 cursor: pointer;

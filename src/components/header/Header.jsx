@@ -11,13 +11,13 @@ function Header() {
       </div>
       <div className="headerContainer">
         <div className="logoContainer">
-          <h1>Spin Stake</h1>
+          <button className="buyBtn">Spin Stake</button>
         </div>
         <div className="navContainer">
-          <button className="navBtn">about us</button>
-          <button className="navBtn">Socials</button>
-          <button className="navBtn">Tokenomics</button>
-          <button className="buyBtn">Buy</button>
+          <button className="navBtn">ABOUT US</button>
+          <button className="navBtn">SOCIALS</button>
+          <button className="navBtn">TOKENOMICS</button>
+          <button className="buyBtn main">BUY</button>
         </div>
       </div>
     </div>
