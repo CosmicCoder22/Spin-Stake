@@ -7,7 +7,7 @@ import greenProgresBar10 from "../../assets/10greenProgresBar.png";
 
 function Tokenomics({ isTokenomicsBlinking }) {
   return (
-    <div className={`tokenomicsBody ${isTokenomicsBlinking ? 'blinking' : ''}`}>
+    <div className={`tokenomicsBody ${isTokenomicsBlinking ? "blinking" : ""}`}>
       <div className="containerName">
         <h1>TOKENOMICS</h1>
       </div>
@@ -49,7 +49,9 @@ function Tokenomics({ isTokenomicsBlinking }) {
       </div>
       <div className="marketPlaceAddress">
         <span>Marketplace address</span>
-        <p href="https://sepolia.etherscan.io/address/0x0534a01bd3c598F518735317D72f6109A424D31F">0x4C57b8f7744BC6A10b14E0ADEE5920104EEF8fcf</p>
+        <p href="https://sepolia.etherscan.io/address/0x0534a01bd3c598F518735317D72f6109A424D31F">
+          0x4C57b8f7744BC6A10b14E0ADEE5920104EEF8fcf
+        </p>
       </div>
       <button className="navBtn">Learn more</button>
     </div>

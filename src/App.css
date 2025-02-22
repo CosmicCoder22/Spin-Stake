@@ -6,6 +6,7 @@
   --pixel-font: "Press Start 2P", serif;
   --black-border: 3px solid black;
   --black-background: rgba(0, 0, 0, 0.5);
+  --elements-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   --main-btn-bg: #fff700;
   --main-btn-border: #908c0d;
   --main-btn-shadow: #4e4b00;
@@ -37,8 +38,8 @@
 }
   .content{
     background-image: url(./assets/contentBackground.png);
-    background-size: cover;
-    background-position: center;
+    background-size:120%;
+    background-position: 100px;
     background-repeat: no-repeat;
     width: 80%;
     height: 90%;

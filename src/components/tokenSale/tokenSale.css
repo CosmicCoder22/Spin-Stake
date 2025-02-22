@@ -4,6 +4,7 @@
     border: var(--black-border);
     background-color: var(--black-background);
     font-family: var(--pixel-font);
+    box-shadow: var(--elements-shadow);
 }
 .tokenSaleContent{
     height: 100%;
@@ -40,6 +41,16 @@
             color: red;
             height: fit-content;
             padding-top: .5em;
+            animation: textPulse 1.5s infinite;
+        }
+        @keyframes textPulse {
+            0%,
+            100%{
+                color: rgb(100, 0, 0);
+            }
+            50%{
+                color: red;
+            }
         }
         .redCircle{
             border-radius: 50%;

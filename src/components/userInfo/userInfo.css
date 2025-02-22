@@ -4,6 +4,7 @@
     border: var(--black-border);
     background-color: var(--black-background);
     font-family: var(--pixel-font);
+    box-shadow: var(--elements-shadow);
 }
 .userInfoContent{
     height: 100%;

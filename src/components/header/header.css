@@ -18,6 +18,7 @@
         justify-content: space-between;
         padding: .4em;
         width: 95%;
+        box-shadow: var(--elements-shadow);
     }
         .logoContainer{
             display: flex;

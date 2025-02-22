@@ -3,6 +3,7 @@
     padding: 1em;
     border: var(--black-border);
     background-color: var(--black-background);
+    box-shadow: var(--elements-shadow);
     
 }
     .aboutUsBody p{

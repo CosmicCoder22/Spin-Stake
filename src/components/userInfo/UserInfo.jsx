@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './userInfo.css'
 
 function UserInfo() {
+
+  const [text, setText] = useState("Connect wallet")
+
+  const handleConnectBtnClick = () => {
+    setText((prev) => (prev === "Connect wallet" ? "0x4C5....F8fcf" : "Connect wallet"))
+  }
   return (
     <div className='userInfoBody'>
       <div className="userInfoContent">
@@ -9,7 +15,7 @@ function UserInfo() {
           <h1>User Info</h1>
         </div>
         <div className="connectBtn">
-          <button className='buyBtn'>Connect wallet</button>
+          <button className='buyBtn' onClick={handleConnectBtnClick}>{text}</button>
         </div>
         <div className="userStatistic">
           <div className="tokenOwned">
