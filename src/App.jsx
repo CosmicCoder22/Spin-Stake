@@ -55,22 +55,6 @@ function App() {
     }, 2000);
   };
 
-  const handleMouseMove = (e) => {
-    const { clientX, clientY } = e;
-    setMousePosition({ x: clientX, y: clientY });
-  };
-
-  useEffect(() => {
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
-  const backgroundStyle = {
-    backgroundPosition: `calc(50% + ${(mousePosition.x / 50) + 10}px) calc(50% + ${(mousePosition.y / 50) + 10}px)`, 
-  };
-
   return (
     <div className="body">
       <AnimatePresence>
@@ -82,7 +66,6 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
-            style={backgroundStyle} 
           >
             <Header
               handleTokenSaleBlinking={handleTokenSaleBlinking}

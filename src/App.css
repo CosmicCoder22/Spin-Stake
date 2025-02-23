@@ -38,8 +38,7 @@
 }
   .content{
     background-image: url(./assets/contentBackground.png);
-    background-size:120%;
-    background-position: 100px;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 80%;
     height: 90%;
@@ -49,7 +48,6 @@
     grid-template-rows: repeat(9, 1fr);
     gap: 1em;
     border: 5px solid #8f8e7e;
-    will-change: transform;
   }
   .blinking{
     animation: blinkingBorder .3s infinite;

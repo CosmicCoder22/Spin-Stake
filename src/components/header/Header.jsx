@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import './headerMediaQuery.css'
 
 import logo from "../../assets/logo.gif";
 
@@ -11,7 +12,7 @@ function Header({ handleTokenSaleBlinking, handleSpinBlinking, handleTokenomicsB
       </div>
       <div className="headerContainer">
         <div className="logoContainer">
-          <button className="buyBtn">Spin Stake</button>
+          <h1 className="logoBaner">Spin Stake</h1>
         </div>
         <div className="navContainer">
           <button className="navBtn" onClick={handleSpinBlinking}>SPIN</button>
